@@ -120,54 +120,95 @@
 
 }
 
+@media screen and (max-width: 580px) {
 
-
-/* @media screen and (max-width: 768px) {
- 
-    .nav-toggle {
-        display: none;
+    .logo-text {
+        font-size: 30px;
     }
 
-   .header {
+    .nav-toggle {
+        display: block;
+        font-size: 28px;
+        padding: 0px 20px;
+        color: #fff;
+    }
+
+    .header .imagen {
         width: 100%;
-        padding: 5em 0em; 
-        flex-direction: column;
-        justify-content: center;
-   }
+    }
 
-   .header .content {
-        margin-bottom: 3em;
-        text-align: center;
-   }
+    .header .imagen .img-perfil {
+        max-width: 420px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
 
+@media screen and (max-width: 480px) {
 
-} */
-
-/* @media screen and (max-width: 768px){
+    body, html {
+        overflow-x: hidden;
+    }
 
     .nav {
-        width: 1400px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
-   .menu {
-    flex-direction: column;
-    margin: 0;
-    background-color: cadetblue;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: calc(100% - 0px);
-    align-items: center;
-    padding: 20px 0;
-    height: calc(100% - 220px);
-    overflow-y: auto;
-   }
+    .nav .nav-logo .logo-text {
+        padding: 0em 30px;
+        font-size: 27px;
+    }
+    
+    .nav-toggle {
+        display: block;
+        font-size: 30px;
+        padding: 0px 20px;
+        color: #fff;
+        z-index: 100;
+    }
 
-   .link, .item {
-    margin-bottom: 30px;
-   }
+    .show-menu {
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 0;
+        display: block;
+    }
 
-   .nav-toggle {
-    display: block;
-   }
-} */
+    .header .content {
+        padding: 0.78em 2em;
+        margin-left: 0;
+    }
+
+    .header .content h3 {
+        font-size: 30px;
+    }
+
+    .header .imagen .img-perfil {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .sobre_mi .container_sobre_mi .sub_sobre_mi {
+        margin-right: 0;
+    }
+
+    .proyectos .card_pro .card {
+        max-width: 380px;
+    }
+
+    .contenido_educacion .educacion_cards  {
+        max-width: 100%;
+    }
+
+    .cont_edu_text .hab-ed, .fecha{
+        font-size: 16px;
+    }
+    
+    .container-footer .input_field .contacto_field {
+        max-width: 100%;
+        
+    }
+}
