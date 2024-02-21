@@ -351,7 +351,6 @@ body {
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #0512ca;
-    color: #fdfdfd;
     transition: all 0.3s ease;
     cursor: pointer;
     font-family: var(--work);
@@ -360,6 +359,11 @@ body {
 
 .btn-pro:hover {
     opacity: 0.8;
+}
+
+.btn-pro .btn-pro-link {
+    text-decoration: none;
+    color: #fdfdfd;
 }
 
 .link_btn {
