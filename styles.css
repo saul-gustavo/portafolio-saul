@@ -355,6 +355,7 @@ body {
     cursor: pointer;
     font-family: var(--work);
     font-weight: 500;
+    color: #fdfdfd;
 }
 
 .btn-pro:hover {
