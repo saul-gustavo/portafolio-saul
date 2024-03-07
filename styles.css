@@ -102,11 +102,13 @@ header .log-text {
 }
 
 .redes i {
-    padding: 10px 15px;
-    background: var(--azul-lig);
+    padding: 10px 10px;
+    border: 1px solid transparent;
     border-radius: 50%;
     color: aliceblue;
     margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .redes i:hover {
