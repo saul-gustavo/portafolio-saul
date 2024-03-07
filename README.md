@@ -1,5 +1,6 @@
 # Portafolio Web - Saul Gustavo Alcantar Sanchez
+## Segundo Diseño de mi Portafolio Personal, más simple y minimalista.
 
-![Screenshot](./images/Portafolio-Saul.png)
+![Screenshot](images/portafolioDos.png)
 
 

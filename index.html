@@ -1,4 +1,5 @@
 <!-- este archivo se creo el dia sabado 17 de febrero del 2024 a las 7:37pm otro diseño de portafolio retomo el proyecto el dia lunes 19 de febrero del 2023 a las 2:18pm-->
+<!-- Se modifico nuevamente el Protafolio con un diseno  mas simple el dia lunes 4 de marzo del 2024 a las 9:35am -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,322 +13,177 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- styles CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Media-Query -->
+    <!-- responsive CSS -->
     <link rel="stylesheet" href="respon.css">
     <!-- libreria de animacion -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./images/Logo-c.jpg" type="image/x-icon">
-    <title>Portafolio Saúl G. Alcantar | Web Frontend</title>
+    <title>Portafolio Saul G. Alcantar S.</title>
 </head>
 <body>
 
-        <nav class="nav" id="mi-nav">
-            <div class="nav-logo">
-                <p class="logo-text">Saúl Gustavo</p>
+   <div class="container">
+        <header>
+            <a href="#" class="log-text">Code With Me</a>
+        </header>
+        <div class="card">
+            <div class="imagen">
+                <img src="./images/Logo-c.jpg" alt="Logo-c">
             </div>
-
-            <button class="nav-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-    
-            <ul class="menu" id="menu">
-                <li class="link"><a class="item" href="#inicio">Inicio</a></li>
-                <li class="link"><a class="item" href="#sobre_mi">Sobre mí</a></li>
-                <li class="link"><a class="item" href="#proyectos">Proyectos</a></li>
-                <li class="link"><a class="item" href="#educacion">Eduación</a></li>
-                <li class="link"><a class="item" href="#habilidades">Habilidades</a></li>
-                <li class="link"><a class="item" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    
-
-    <header class="header container" id="inicio" data-aos="fade-down">
-            <span class="blur"></span>
-            <span class="blur"></span>
-        <div class="content">
-            
-            <h3>Hola, Soy Saúl Alcantar</h3>
-            <p class="dedica">Soy Desarrollador Web Frontend</p>
-            <p class="sub">
-                Soy un estudiante autodidacta enfocado en el Desarrollo Web Frontend, me gusta crear diseños minimalistas y funcionales para brindarle una mejor experiencia al usuario.
-            </p>
-            <a href="#" onclick=""
-             class="link_btn">
-                <button class="btn">Ver CV</button>
-            </a>
-        </div>
-
-        <div class="imagen" data-aos="fade-left">
-            <!-- <img src="./images/photo-pefil-remove.png" alt="" class="img-perfil"> -->
-            <img src="./images/undraw_designer.svg" alt="undraw_designer" class="img-perfil">
-        </div>
-
-        <span class="blur-dos"></span>
-        <span class="blur-dos"></span>
-    </header>
-
-    <section class="sobre_mi" id="sobre_mi">
-        <span class="blur-tres"></span>
-        <span class="blur-tres"></span>
-        <h1 class="title-sec">Sobre mí</h1>
-        <div class="container_sobre_mi">
-            <div class="sobre-imagen">
-                <img src="./images/photo-pefil-remove.png" alt="undraw_designer" class="img_sobre_mi" data-aos="fade-right">
-            </div>
-    
-            <div class="contenido_texto" data-aos="fade-up-right">
-                <h2 class="name">Saúl Gustavo Alcantar Sánchez</h2>
-                <p class="sub_sobre_mi">
-                    Soy un estudiante autodidacta enfocado en el Desarrollo Web Frontend, me gusta crear sitios minimalistas y funcionales. Aspiro a conseguir un trabajo en el mundo del desarrollo web para adquirir experiencia y fortalecer mi vida profesional. <br> <br>
-                    Soy una persona empática y responsable, con competencias enfocadas en el trabajo en equipo, el aprendizaje  constante, resolución de problemas, resiliencia y adaptabilidad.
-                    
-                </p>
+            <div class="contenido-pres">
+                <h1>Saul G. Alcantar S.</h1>
+                <p>Estudiante en Desarrollador Web Frontend</p>
+                <div class="redes">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <button class="btn cv">Ver CV</button>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="line"></div>
 
-    <section class="proyectos" id="proyectos" data-aos="fade-up"> 
-        <h2 class="title-sec">Proyectos</h2>
-        <span class="blur-four"></span>
-        <span class="blur-four"></span>
-        <div class="card_pro" data-aos="fade-up" data-aos-duration="3000">
-
-            <div class="card">
-                <div class="imagen-pro">
-                    <img src="./images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+        <section class="sobre-mi">
+            <div class="container-sobre">
+                <h2>Sobre mi</h2>
+                <div class="text">
+                    <p>Soy estudiante autodidacta en el desarrollo web Frontend, me especializo en crear disenos minimalistas y funcionales, para que el usuario tenga una buena experiencia, me gustaria obtener un trabajo en desarrollo web para adquirir experiencia y fortalecer mi vida profesional</p>
+                    <br>
+                    <p>Me gusta colaborar con profesionales para aprender y tener buenas practicas de programacion, tengo compentencias como responsabilidad, empatico y trabajo en equipo</p>
                 </div>
-                <div class="cont_pro_text">
-                    <p class="hab">Portafolio Web</p>
-                    <p class="sub_pro">
-                        Este es mi portafolio Web personal, me base en un diseño simple pero atractivo, mezclado mis conocimientos para crearlo.
-                    </p>
-                </div>
-                <button class="btn-pro">
-                    <a href="https://github.com/Saul-Gustavo/Portafolio-Saul-Alcantar" class="btn-pro-link" target="_blank">Ver sitio</a>
-                </button>
-            </div>
-
-            <div class="card">
-                <div class="imagen-pro">
-                    <img src="./images/portafolio-skills.jpg" alt="" class="img-pro">
-                </div>
-                <div class="cont_pro_text">
-                    <p class="hab">Landing Page</p>
-                    <p class="sub_pro">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo temporibus, asperiores maiores harum sint qui.
-                    </p>
-                </div>
-                <button class="btn-pro">Ver Sitio</button>
-            </div>
-
-            <div class="card">
-                <div class="imagen-pro">
-                    <img src="./images/portafolio-skills.jpg" alt="" class="img-pro">
-                </div>
-                <div class="cont_pro_text">
-                    <p class="hab">Landing Page</p>
-                    <p class="sub_pro">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo temporibus, asperiores maiores harum sint qui.
-                    </p>
-                </div>
-                <button class="btn-pro">Ver Sitio</button>
-            </div>
-        </div>
-
-        <a href="#" class="link_btn">
-            <button class="btn_more">Saber más</button>
-        </a>
-
-        <span class="blur-pro" data-aos="fade-up"></span>
-        <span class="blur-pro" data-aos="fade-up"></span>
-
-    </section>
-
-    <section class="contenido_educacion" id="educacion" data-aos="fade-up">
-        <h1 class="title-sec">Educacion</h1>
-        <div class="educacion_cards">
-            <span class="blur-five" data-aos="fade-up"></span>
-            <span class="blur-five" data-aos="fade-up"></span>
-            
-            <div class="card_edu" data-aos="zoom-in-up">
-                <div class="imagen-edu">
-                    <img src="./images/certificado-web-fcc.png" alt="" class="img-edu">
-                </div>
-                <div class="cont_edu_text">
-                    <p class="hab-ed">Diseño responsive con HTML5 y CSS3</p>
-                    <p class="fecha">
-                        Enero - Abril 2022
-                        <span>FreeCodeCamp</span>
-                    </p>
+                <div class="educacion">
+                    <h1 class="title title-edu">Certificados</h1>
+                    <a href="#" target="_blank" class="link">Diseno Web Responsivo con HTML5 y CSS3 -- Freecodecamp
+                        <span class="fecha">Enero - Abril 2022</span>
+                    </a>
+                    <a href="#" target="_blank" class="link">
+                        ALgoritmos y Estructura de Datos con JavaScript -- Freecodecamp
+                        <span class="fecha">Abril - Julio 2022</span>
+                    </a>
+                    <a class="link">Ing. Sistemas en Universidad Tres Culturas
+                        <span class="fecha">Sep 2019 - Ago 2020</span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="card_edu" data-aos="zoom-out">
-                <div class="imagen-edu">
-                    <img src="./images/certificado-js-fcc.png" alt="" class="img-edu">
+        <section class="proyectos">
+            <h1 class="title">Proyectos</h1>
+            <div class="cards-pro">
+
+                <div class="card-pro">
+                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+                    <div class="texto overlay">
+                        <h2>Portafolio Web Personal</h2>
+                        <p class="sub">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cumque assumenda dolore odit ea eligendi eveniet laudantium quae hic cupiditate.
+                        </p>
+                        <button class="btn btn-pro">Ver Sitio</button>
+                    </div>
                 </div>
-                <div class="cont_edu_text">
-                    <p class="hab-ed">Algoritmos y Estructuras de Datos con JavaScript</p>
-                    <p class="fecha">
-                        Abril - Juilio 2022
-                        <span>FreeCodeCamp</span>
-                    </p>
+
+                <div class="card-pro">
+                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+                    <div class="texto overlay">
+                        <h2>Portafolio Web Personal</h2>
+                        <p class="sub">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cumque assumenda dolore odit ea eligendi eveniet laudantium quae hic cupiditate.
+                        </p>
+                        <button class="btn btn-pro">Ver Sitio</button>
+                    </div>
                 </div>
+
             </div>
+        </section>
 
-            <div class="card_edu" data-aos="zoom-in-up">
-                <div class="imagen-edu">
-                    <img src="./images/certificado-js-fcc.png" alt="" class="img-edu">
+        <section class="skills">
+            <h2 class="title">Habilidades</h2>
+            <div class="skills-main">
+                <div class="skills-left">
+
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>HTML5</p>
+                            <p>55%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>CSS3</p>
+                            <p>50%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>JavaScript</p>
+                            <p>45%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="cont_edu_text">
-                    <p class="hab-ed">Universidad Tres Culturas</p>
-                    <p class="fecha">
-                        Septiembre 2019 - Agosto 2022
-                        <span>Por Terminar</span>
-                    </p>
-                </div>
-            </div>
+                <div class="skills-right">
 
-        </div>
-    </section>
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>GitHub</p>
+                            <p>25%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="git"></span>
+                        </div>
+                    </div>
 
-    <section class="skills_container" id="habilidades">
-        <h1 class="title-sec">Habilidades</h1>
-        <div class="skills" data-aos="zoom-in-up">
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>React</p>
+                            <p>35%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
 
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>HTML5</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar"></div>
-                        <span class="progress-text">60%</span>
+                    <div class="skills-bar">
+                        <div class="info">
+                            <p>Python</p>
+                            <p>32%</p>
+                        </div>
+                        <div class="bar">
+                            <span class="python"></span>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>CSS3</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar-css"></div>
-                        <span class="progress-text">50%</span>
-                        </div>
-                    </div>
-                </div>
+        <footer class="contacto">
+            <div class="contacto-text">
+                <p>saulgustavo237@gmail.com</p>
+                <button class="btn-send">>>></button>
             </div>
+        </footer>
 
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar-js"></div>
-                        <span class="progress-text">40%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar-git"></div>
-                        <span class="progress-text">45%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>React</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar-react"></div>
-                        <span class="progress-text">35%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card_skill">
-                <div class="texto">
-                    <h3>Python</h3>
-                </div>
-                <div class="progre">
-                    <div class="barra">
-                        <div class="progress-container">
-                        <div class="progress-bar-py"></div>
-                        <span class="progress-text">35%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div class="copy">
+            &copy; Creado por Saul Gustavo Alcantar Sanchez -- Beta 1.1:5.3.2024
         </div>
-    </section>
-
-    <footer class="container-footer" id="contacto" data-aos="fade-up">
-        <span class="blur-footer" data-aos="fade-up"></span>
-        <span class="blur-footer" data-aos="fade-up"></span>
-
-        <div class="column-logo">
-            <div class="logo">
-                <img src="./images/Logo-c.jpg" alt="" class="footer_logo">
-                <p class="name-fo">Saul Gustavo Alcantar Sanchez</p>
-                <p class="saber">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, harum!</p>
-            </div>
-            
-            <div class="redes_sociales">
-                <i class="fa fa-brand fa-facebook"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-        </div>
-
-        <div class="column input_field">
-            <form class="contacto_field">
-                <input type="text" class="name_input" name="nombre" required placeholder="Nombre | Name">
-                <input type="email" class="email" name="email" id="email" placeholder="E-mail" required>
-                <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje | Message"></textarea>
-            </form>
-            <button class="btn-enviar">Enviar</button>
-        </div>
-
-        <span class="blur-fo" data-aos="fade-up"></span>
-        <span class="blur-fo" data-aos="fade-up"></span>
-
-    </footer>
-
-    <div class="copyright">
-        <p>&copy; Copyright 2024 -- Creado por Saul Gustavo Alcantar Sanchez. <br>
-         <span class="beta">Portafolio Beta 1.21.02.24</span></p>
     </div>
 
 
-    <script src="app.js"></script>
     <!-- libreria de animacion-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1200
-        });
+    AOS.init({
+        duration: 1200
+    });
     </script>
     
 </body>
