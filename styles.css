@@ -80,6 +80,8 @@ header .log-text {
 
 .card .contenido-pres p {
     font-size: 18px;
+    font-family: var(--monset);
+    font-weight: 400;
 }
 
 .card img {
@@ -136,6 +138,8 @@ header .log-text {
     line-height: 1.4;
     font-size: 18px;
     margin-bottom: 20px;
+    font-family: var(--work);
+    font-weight: 500;
 }
 
 .educacion {
@@ -148,6 +152,9 @@ header .log-text {
     color:var(--white);
     margin-bottom: 20px;
     transition: all 0.3s ease;
+    font-size: 17px;
+    font-family: var(--work);
+    font-weight: 400;
 }
 
 .link:hover {
@@ -273,17 +280,17 @@ header .log-text {
 
 .skills-bar .bar .html {
     width: 55%;
-    animation: html 2s;
+    animation: html 3s;
 }
 
 .skills-bar .bar .css {
     width: 50%;
-    animation: css 2s;
+    animation: css 3.7s;
 }
 
 .skills-bar .bar .js {
     width: 45%;
-    animation: js 3.5s;
+    animation: js 3.2s;
 }
 
 .skills-bar .bar .git {
@@ -293,12 +300,12 @@ header .log-text {
 
 .skills-bar .bar .react {
     width: 30%;
-    animation: react 3s;
+    animation: react 3.1s;
 }
 
 .skills-bar .bar .python {
     width: 32%;
-    animation: python 3s;
+    animation: python 3.3s;
 }
 
 /* animacion skills */
