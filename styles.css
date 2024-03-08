@@ -29,8 +29,59 @@ body {
     justify-content: center;
     color: var(--white);
     position: relative;
-    background: url(./images/bg-beta.png) no-repeat top / cover;
+    background: var(--bg-skill);
+    /* background: url(./images/bg-beta.png) no-repeat top / cover; */
 }
+
+
+.blur-top {
+    position: absolute;
+    top: 6em;
+    left: 0;
+    box-shadow: 0 0 1000px 80px #8811a8;
+    z-index: -1;
+}
+
+.blur-top-dos {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 1000px 80px #0ba9ca;
+    z-index: -1;
+}
+
+.blur-medio {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    box-shadow: 0 0 1000px 80px #4848f7;
+    z-index: -1;
+}
+
+.blur-down-dos {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    box-shadow: 0 0 1000px 80px #af5ffa;
+    z-index: -1;
+}
+
+.blur-down-tres {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    box-shadow: 0 0 1000px 80px #6969ee;
+    z-index: -1;
+}
+
+.blur-down-four {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 1000px 80px #9931fa;
+    z-index: -1;
+}
+
 
 .btn {
     padding: 10px 40px;
