@@ -23,7 +23,7 @@
     <title>Portafolio Saul G. Alcantar S.</title>
 </head>
 
-<body>
+<body id="body">
 
     <div class="container">
         <span class="blur-top"></span>
@@ -32,20 +32,28 @@
         <span class="blur-down-dos"></span>
         <span class="blur-down-tres"></span>
         <span class="blur-down-four"></span>
-        <header>
-            <a href="#" class="log-text">Code With Me</a>
+        <header class="header">
+            <button class="btn-cambio">
+                <i class="fa-solid fa-sun" id="icono"></i>
+            </button>
         </header>
         <div class="card">
             <div class="imagen">
                 <img src="./images/Logo-c.jpg" alt="Logo-c">
             </div>
             <div class="contenido-pres">
-                <h1>Saul G. Alcantar S.</h1>
+                <h1>Saul Alcantar S.</h1>
                 <p>Estudiante en Desarrollador Web Frontend</p>
                 <div class="redes">
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="#" target="_blank" class="link-redes">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" class="link-redes">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="link-redes">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                     <button class="btn cv">Ver CV</button>
                 </div>
             </div>
@@ -56,15 +64,15 @@
             <div class="container-sobre">
                 <h2>Sobre mi</h2>
                 <div class="text">
-                    <p>Soy estudiante autodidacta en el desarrollo web Frontend, me especializo en crear disenos
+                    <p>Soy estudiante autodidacta en el desarrollo web Frontend, me especializo en crear diseños
                         minimalistas y funcionales, para que el usuario tenga una buena experiencia, me gustaria obtener
                         un trabajo en desarrollo web para adquirir experiencia y fortalecer mi vida profesional</p>
                     <br>
                     <p>Me gusta colaborar con profesionales para aprender y tener buenas practicas de programacion,
-                        tengo compentencias como responsabilidad, empatico y trabajo en equipo</p>
+                        tengo compentencias como responsabilidad, empatico y trabajo en equipo.</p>
                 </div>
                 <div class="educacion">
-                    <h1 class="title title-edu">Certificados</h1>
+                    <h1 class="title title-edu">Educación</h1>
                     <a href="#" target="_blank" class="link">Diseno Web Responsivo con HTML5 y CSS3 -- Freecodecamp
                         <span class="fecha">Enero - Abril 2022</span>
                     </a>
@@ -182,8 +190,10 @@
 
         <footer class="contacto">
             <div class="contacto-text">
-                <p>saulgustavo237@gmail.com</p>
-                <button class="btn-send">>>></button>
+                <p class="email">saulgustavo237@gmail.com</p>
+                <button class="btn-send accion">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </footer>
 
@@ -200,6 +210,8 @@
             duration: 1200
         });
     </script>
+
+    <script src="app.js"></script>
 
 </body>
 

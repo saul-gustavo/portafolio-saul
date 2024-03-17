@@ -9,6 +9,7 @@
     --purple: #800080;
     --bg-skill: #13022b;
     --bg-btn: #13025b;
+    --bg-blue: #0000ff;
 }
 
 * {
@@ -28,8 +29,11 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--white);
+    /* color: #13022b; */
     position: relative;
     background: var(--bg-skill);
+    transition: background-color 0.5s, color 0.5s;
+    /* background-color: white; */
     /* background: url(./images/bg-beta.png) no-repeat top / cover; */
 }
 
@@ -38,7 +42,7 @@ body {
     position: absolute;
     top: 6em;
     left: 0;
-    box-shadow: 0 0 1000px 80px #8811a8;
+    box-shadow: 0 0 1000px 60px #8811a8;
     z-index: -1;
 }
 
@@ -46,7 +50,7 @@ body {
     position: absolute;
     top: 20%;
     right: 0;
-    box-shadow: 0 0 1000px 80px #0ba9ca;
+    box-shadow: 0 0 1000px 60px #0ba9ca;
     z-index: -1;
 }
 
@@ -54,7 +58,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    box-shadow: 0 0 1000px 80px #4848f7;
+    box-shadow: 0 0 1000px 60px #4848f7;
     z-index: -1;
 }
 
@@ -62,7 +66,7 @@ body {
     position: absolute;
     top: 60%;
     right: 0;
-    box-shadow: 0 0 1000px 80px #af5ffa;
+    box-shadow: 0 0 1000px 60px #af5ffa;
     z-index: -1;
 }
 
@@ -70,7 +74,7 @@ body {
     position: absolute;
     top: 80%;
     left: 20%;
-    box-shadow: 0 0 1000px 80px #6969ee;
+    box-shadow: 0 0 1000px 60px #6969ee;
     z-index: -1;
 }
 
@@ -78,14 +82,14 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    box-shadow: 0 0 1000px 80px #9931fa;
+    box-shadow: 0 0 1000px 60px #9931fa;
     z-index: -1;
 }
 
 
 .btn {
     padding: 10px 40px;
-    background: var(--azul-lig);
+    background: var(--bg-blue);
     color: var(--white);
     border: none;
     border-radius: 20px;
@@ -95,21 +99,53 @@ body {
 }
 
 .btn:hover {
-    background: blue;
+    background-color: var(--azul-lig);
 }
 
-header {
+.header {
     display: flex;
     justify-content: flex-end;
     margin: 20px 10px;
 }
 
-header .log-text {
+.header .btn-cambio {
     display: block;
-    text-decoration: none;
     color: var(--white);
-    font-size: 25px;
-    font-family: var(--monset);
+    /* border: 1px solid #10d6cc; */
+}
+
+/* dark mode  */
+.oscuro {
+    background-color: #cccccc;
+    color: black;
+}
+
+/* color del icono  */
+.color {
+    color: #f3ae1a;
+}
+
+.copyB {
+    color: #13022b;
+}
+
+/* boton dark mode */
+
+.btn-cambio {
+    border: none;
+    background: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 23px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-moon {
+    color: black;
 }
 
 .container {
@@ -152,6 +188,11 @@ header .log-text {
     margin-top: 30px;
 }
 
+.redes .link-redes {
+    text-decoration: none;
+    color: #fff;
+}
+
 .redes i {
     padding: 10px 10px;
     border: 1px solid transparent;
@@ -160,6 +201,7 @@ header .log-text {
     margin-right: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: #080808;
 }
 
 .redes i:hover {
@@ -169,7 +211,6 @@ header .log-text {
 .title-edu {
     margin-bottom: 20px;
 }
-
 
 /* sobre mi */
 
@@ -202,12 +243,16 @@ header .log-text {
 
 .educacion .link {
     text-decoration: none;
-    color:var(--white);
+    color: #fff;
     margin-bottom: 20px;
     transition: all 0.3s ease;
     font-size: 17px;
     font-family: var(--work);
     font-weight: 400;
+    background-color: var(--bg-btn);
+    border-radius: 20px;
+    width: 100%;
+    padding: 2px;
 }
 
 .link:hover {
@@ -405,9 +450,9 @@ header .log-text {
     padding: 1em;
 }
 
-.contacto-text p {
+.contacto-text .email {
     font-size: 20px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #080808;
     width: 300px;
     margin: 20px auto;
     border-radius: 20px;
