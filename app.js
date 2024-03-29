@@ -1,19 +1,18 @@
-const cuerpo = document.querySelector("body");
+const cuerpoBody = document.querySelector("body");
+const cambio = document.querySelector(".btn-cambio");
 const icono = document.getElementById("icono");
-const copy = document.querySelector(".copy");
+
 let modoOscuro = false;
 let esSol = true;
 
-icono.addEventListener("click", () => {
-    modoOscuro = !modoOscuro;
+cambio.addEventListener('click', () => {
+    modoOscuro = !modoOscuro
     if (modoOscuro) {
-        cuerpo.classList.add("oscuro");
-        copy.classList.add("copyB");
+        cuerpoBody.classList.add("oscuro");
     } else {
-        cuerpo.classList.remove("oscuro");
-        copy.classList.remove("copyB");
+        cuerpoBody.classList.remove("oscuro");
     }
-});
+})
 
 icono.addEventListener('click', () => {
     if (esSol) {
@@ -25,52 +24,84 @@ icono.addEventListener('click', () => {
         icono.classList.add('fa-sun');
         icono.style.color = "white";
     }
-
     esSol = !esSol;
 });
 
-// link boton
-const linkBtn = document.querySelector(".accion");
-linkBtn.addEventListener("click", function () {
-    window.location.href = "https://www.youtube.com";
-})
 
 
+// const cuerpo = document.querySelector("body");
+// const icono = document.getElementById("icono");
+// const copy = document.querySelector(".copy");
+// let modoOscuro = false;
+// let esSol = true;
 
-
-
-
-// // Scroll de barra de navegacion, cambio de color
-
-// const miNav = document.getElementById("mi-nav");
-
-// window.addEventListener('scroll', () => {
-//     if(window.scrollY > 100) {
-//         miNav.classList.add("nav-scroll");
+// icono.addEventListener("click", () => {
+//     modoOscuro = !modoOscuro;
+//     if (modoOscuro) {
+//         cuerpo.classList.add("oscuro");
+//         copy.classList.add("copyB");
 //     } else {
-//         miNav.classList.remove("nav-scroll");
+//         cuerpo.classList.remove("oscuro");
+//         copy.classList.remove("copyB");
 //     }
 // });
 
-// // alerta de boton
+// icono.addEventListener('click', () => {
+//     if (esSol) {
+//         icono.classList.remove('fa-sun');
+//         icono.classList.add('fa-moon');
+//         icono.style.color = "black";
+//     } else {
+//         icono.classList.remove('fa-moon');
+//         icono.classList.add('fa-sun');
+//         icono.style.color = "white";
+//     }
 
-// function alerta() {
-//     alert("No hay nada viejo p**o");
-// }
-
-// // Enlace de un boton, sin uso
-// // const boton = document.querySelector(".btn");
-// // boton.addEventListener('click', () => {
-// //     window.location.href = "https://www.google.com";
-// // })
-
-// //  Menu de navegacion
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var navToggle = document.querySelector('.nav-toggle');
-//     var menu = document.getElementById('menu');
-
-//     navToggle.addEventListener('click', function() {
-//         menu.classList.toggle('show-menu');
-//     });
+//     esSol = !esSol;
 // });
+
+// // link boton
+// const linkBtn = document.querySelector(".accion");
+// linkBtn.addEventListener("click", function () {
+//     window.location.href = "https://www.youtube.com";
+// })
+
+
+
+
+
+
+// // // Scroll de barra de navegacion, cambio de color
+
+// // const miNav = document.getElementById("mi-nav");
+
+// // window.addEventListener('scroll', () => {
+// //     if(window.scrollY > 100) {
+// //         miNav.classList.add("nav-scroll");
+// //     } else {
+// //         miNav.classList.remove("nav-scroll");
+// //     }
+// // });
+
+// // // alerta de boton
+
+// // function alerta() {
+// //     alert("No hay nada viejo p**o");
+// // }
+
+// // // Enlace de un boton, sin uso
+// // // const boton = document.querySelector(".btn");
+// // // boton.addEventListener('click', () => {
+// // //     window.location.href = "https://www.google.com";
+// // // })
+
+// // //  Menu de navegacion
+
+// // document.addEventListener('DOMContentLoaded', function() {
+// //     var navToggle = document.querySelector('.nav-toggle');
+// //     var menu = document.getElementById('menu');
+
+// //     navToggle.addEventListener('click', function() {
+// //         menu.classList.toggle('show-menu');
+// //     });
+// // });

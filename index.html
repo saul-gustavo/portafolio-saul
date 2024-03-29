@@ -17,7 +17,7 @@
     <!-- styles CSS -->
     <link rel="stylesheet" href="styles.css">
     <!-- responsive CSS -->
-    <link rel="stylesheet" href="respon.css">
+    <!-- <link rel="stylesheet" href="respon.css"> -->
     <!-- libreria de animacion -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portafolio Saul G. Alcantar S.</title>
@@ -26,12 +26,6 @@
 <body id="body">
 
     <div class="container">
-        <span class="blur-top"></span>
-        <span class="blur-top-dos"></span>
-        <span class="blur-medio"></span>
-        <span class="blur-down-dos"></span>
-        <span class="blur-down-tres"></span>
-        <span class="blur-down-four"></span>
         <header class="header">
             <button class="btn-cambio">
                 <i class="fa-solid fa-sun" id="icono"></i>
@@ -39,11 +33,11 @@
         </header>
         <div class="card">
             <div class="imagen">
-                <img src="./images/Logo-c.jpg" alt="Logo-c">
+                <img src="images/Logo-c.jpg" alt="Logo-c" class="logo">
             </div>
             <div class="contenido-pres">
-                <h1>Saul Alcantar S.</h1>
-                <p>Estudiante en Desarrollador Web Frontend</p>
+                <h1>Saúl Alcantar S.</h1>
+                <p class="dedica">Estudiante en Desarrollador Web Frontend</p>
                 <div class="redes">
                     <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
                         <i class="fa-brands fa-x-twitter"></i>
@@ -75,52 +69,83 @@
                 </div>
                 <div class="educacion">
                     <h1 class="title title-edu">Educación</h1>
-                    <a href="#" target="_blank" class="link">Diseno Web Responsivo con HTML5 y CSS3 -- Freecodecamp
-                        <span class="fecha">Enero - Abril 2022</span>
-                    </a>
-                    <a href="#" target="_blank" class="link">
-                        Algoritmos y Estructura de Datos con JavaScript -- Freecodecamp
-                        <span class="fecha">Abril - Julio 2022</span>
-                    </a>
-                    <a class="link">Ing. Sistemas en Universidad Tres Culturas
-                        <span class="fecha">Sep 2019 - Ago 2020</span>
-                    </a>
+                    <div class="contenido-edu">
+                        <a href="#" target="_blank" class="cert luz">
+                            Diseño Web Responsivo con HTML5 y CSS3 - Freecodecamp
+                        </a>
+                        <a href="#" target="_blank" class="cert luz">
+                            Algoritmos y Estructura de Datos con JavaScript - Freecodecamp
+                        </a>
+                        <p class="cert luz">Ing. Sistemas Computacionales Sep. 2019 - Ago 2020</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="proyectos" data-aos="fade-up">
-            <h1 class="title">Proyectos</h1>
+        <section class="proyectos">
+            <h1 class="title-pro">Proyectos</h1>
             <div class="cards-pro">
-
-                <div class="card-pro">
-                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
-                    <div class="texto overlay">
-                        <h2>Portafolio Web Personal</h2>
-                        <p class="sub">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cumque assumenda dolore odit
-                            ea eligendi eveniet laudantium quae hic cupiditate.
-                        </p>
-                        <button class="btn btn-pro">Ver Sitio</button>
-                    </div>
+                <div class="card-envolt">
+                    <a href="#" target="_blank" class="card-link">
+                        <div class="card-pro">
+                            <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+                            <div class="contenido-pro">
+                                <h2 class="title-card">Landing Page</h2>
+                                <p class="desp">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cumque quo
+                                    adipisci,
+                                    nisi
+                                    eos
+                                    eligendi!
+                                </p>
+                                <div class="iconos-tools">
+                                    <div class="icon-tool"></div>
+                                    <div class="icon-tool"></div>
+                                    <div class="icon-tool"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card-pro">
-                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
-                    <div class="texto overlay">
-                        <h2>Portafolio Web Personal</h2>
-                        <p class="sub">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cumque assumenda dolore odit
-                            ea eligendi eveniet laudantium quae hic cupiditate.
-                        </p>
-                        <button class="btn btn-pro">Ver Sitio</button>
-                    </div>
+                <div class="card-envolt">
+                    <a href="#" target="_blank" class="card-link">
+                        <div class="card-pro">
+                            <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+                            <div class="contenido-pro">
+                                <h2 class="title-card">Desafios FrontendMentor</h2>
+                                <p class="desp">
+                                    Desafios de la plataforma FrontendMentor.io para practicar las habilidades del
+                                    Desarrollo Web Frontend
+                                </p>
+                                <div class="iconos-tools">
+                                    <div class="icon-tool"></div>
+                                    <div class="icon-tool"></div>
+                                    <div class="icon-tool"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
+                <div class="enroll">
+                    <a href="#" target="_blank" class="card-simple">
+                        <div class="card-simp">
+                            <h2>Minecraft Search</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sapiente inventore
+                                temporeiusto.</p>
+                            <div class="iconos-tools-dos">
+                                <div class="icon-tool"></div>
+                                <div class="icon-tool"></div>
+                                <div class="icon-tool"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="skills" data-aos="fade-up" data-aos-duration="3000">
+        <section class="skills">
             <h2 class="title">Habilidades</h2>
             <div class="skills-main">
                 <div class="skills-left">
@@ -200,11 +225,9 @@
         </footer>
 
         <div class="copy">
-            &copy; Creado por Saul Gustavo Alcantar Sanchez -- Beta 1.2:17.3.2024
+            &copy; Creado por Saul Gustavo Alcantar Sanchez <br> <!-- Beta 1.2:17.3.2024 -->
         </div>
     </div>
-
-
     <!-- libreria de animacion-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
