@@ -1,11 +1,9 @@
 const cuerpoBody = document.querySelector("body");
-const cambio = document.querySelector(".btn-cambio");
 const icono = document.getElementById("icono");
-
 let modoOscuro = false;
 let esSol = true;
 
-cambio.addEventListener('click', () => {
+icono.addEventListener('click', () => {
     modoOscuro = !modoOscuro
     if (modoOscuro) {
         cuerpoBody.classList.add("oscuro");
