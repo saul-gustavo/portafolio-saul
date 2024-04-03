@@ -29,12 +29,9 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--white);
-    /* color: #13022b; */
     position: relative;
     background: var(--bg-skill);
     transition: background-color 0.5s, color 0.5s;
-    /* background-color: white; */
-    /* background: url(./images/bg-beta.png) no-repeat top / cover; */
 }
 
 /* btn styles */
@@ -63,10 +60,10 @@ body {
 .header .btn-cambio {
     display: block;
     color: var(--white);
-    /* border: 1px solid #10d6cc; */
 }
 
 /* dark mode  */
+
 .oscuro {
     background-color: #FFFFFC;
     color: #000000;
@@ -228,14 +225,19 @@ body {
     width: 88%;
 }
 
+/* title section */
+
+.title {
+    margin: 20px 0px 20px 1.7em;
+}
+
+.title-pro {
+    margin: 20px 1.5em;
+}
 /* proyectos cards */
 
 .proyectos {
     margin:auto;
-}
-
-.title-pro {
-    margin: 0px 1.5em;
 }
 
 .card-link {
@@ -251,22 +253,9 @@ body {
     gap: 20px;
     padding: 20px;
     border-radius: 30px;
-    box-shadow: 1px 1px 10px 1px #000000;
     transition: all 0.3s ease;
 }
 
-.card-pro:hover {
-    box-shadow: 1px 1px 9px 1px #fff;
-}
-
-/* modo oscuro cards*/
-.oscuro .card-pro {
-    box-shadow: 1px 1px 10px 1px #000000;
-}
-
-.oscuro .card-pro:hover {
-    box-shadow: 1px 1px 10px 1px #808080;
-}
 /* end cards */
 
 .card-pro .img-pro {
@@ -305,7 +294,6 @@ body {
     padding: 20px;
     transition: all 0.3s ease;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px 1px #000000;
 }
 
 .card-simp h2 {
@@ -319,21 +307,12 @@ body {
     font-family: var(--monset);
 }
 
-/* modo oscuro card simp */
 
-.oscuro .card-simp {
-    box-shadow: 1px 1px 10px 0px #000000;
-}
-
-.oscuro .card-simp:hover {
-    box-shadow: 1px 1px 10px 1px #808080;
+.card-simp:hover, .card-pro:hover {
+    opacity: 0.8;
 }
 
 /* fin modo oscuro */
-
-.card-simp:hover {
-    box-shadow: 1px 1px 10px 1px #f0f8ff;
-}
 
 .iconos-tools-dos {
     display: flex;
@@ -358,10 +337,6 @@ body {
 .skills {
     margin: 4em 0em;
     margin: auto;
-}
-
-.skills .title {
-    margin: 20px 0px 20px 1.7em;
 }
 
 .skills-main {
