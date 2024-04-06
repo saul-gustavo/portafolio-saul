@@ -6,10 +6,12 @@
     /* colores */
     --white: #fff;
     --azul-lig: #8d8dfa;
-    --purple: #800080;
+    /* --purple: #800080; */
     --bg-skill: #0c001b;
-    --bg-btn: #13025b;
+    /* --bg-btn: #13025b; */
     --bg-blue: #0000ff;
+    /* dark mode color */
+    --dark-color: #000000;
 }
 
 * {
@@ -36,19 +38,20 @@ body {
 
 /* btn styles */
 
-.btn {
-    padding: 10px 40px;
-    background: var(--bg-blue);
+.cv-link {
+    text-decoration: none;
     color: var(--white);
-    border: none;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--bg-blue);
+    padding: 10px 30px;
     border-radius: 20px;
     transition: all 0.3s ease;
-    cursor: pointer;
-    font-size: 16px;
 }
 
-.btn:hover {
-    background-color: var(--azul-lig);
+.cv-link:hover {
+    opacity: 0.8;
 }
 
 .header {
@@ -57,52 +60,29 @@ body {
     margin: 20px 10px;
 }
 
-.header .btn-cambio {
-    display: block;
-    color: var(--white);
-}
-
 /* dark mode  */
 
 .oscuro {
     background-color: #FFFFFC;
-    color: #000000;
+    color: var(--dark-color);
 }
 
 .oscuro .card-link {
-    color: #000000;
+    color: var(--dark-color);
 }
 
 .oscuro .cert {
-    color: #000;
+    color: var(--dark-color);
 }
 
 .oscuro .card-simple {
-    color: #000;
+    color: var(--dark-color);
 }
 
-/* color del icono  */
-.color {
-    color: #f3ae1a;
-}
-
-/* boton dark mode */
-
-.btn-cambio {
-    border: none;
-    background: none;
-    border-radius: 20px;
+#icono {
+    font-size: 25px;
     cursor: pointer;
-    font-size: 23px;
-    width: 60px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.i-moon {
-    color: #000000;
+    padding: 0px 1em;
 }
 
 .container {
@@ -144,6 +124,7 @@ body {
 
 .redes {
     margin-top: 30px;
+    display: flex;
 }
 
 .redes .link-redes {
@@ -166,14 +147,25 @@ body {
     background: #0000ff;
 }
 
-.title-edu {
+/* estilos generales */
+
+.sobre-mi, .skills, .skills-main, 
+.contacto, .proyectos {
+    width: 100%;
+    max-width: 85%;
+}
+
+.title {
+    padding: 0.7em 0px;
+}
+
+.title-hab {
     margin-bottom: 20px;
 }
 
 /* sobre mi */
 
 .sobre-mi {
-    width: 80%;
     display: block; 
     margin: 0 auto;
     padding: 30px 0px;
@@ -181,10 +173,6 @@ body {
 
 .educacion {
     margin-top: 50px;
-}
-
-.container-sobre h2 {
-    margin: 20px 0px;
 }
 
 .sobre-mi .container-sobre .text {
@@ -218,22 +206,6 @@ body {
     opacity: 0.7;
 }
 
-/* secciones */
-
-.skills, .skills-main, 
-.contacto, .proyectos {
-    width: 88%;
-}
-
-/* title section */
-
-.title {
-    margin: 20px 0px 20px 1.7em;
-}
-
-.title-pro {
-    margin: 20px 1.5em;
-}
 /* proyectos cards */
 
 .proyectos {
@@ -335,8 +307,7 @@ body {
 /* skills */
 
 .skills {
-    margin: 4em 0em;
-    margin: auto;
+    margin: 0px auto;
 }
 
 .skills-main {
@@ -345,6 +316,7 @@ body {
     grid-row-gap: 20px;
     grid-column-gap: 50px;
     margin: auto;
+    width: 90%;
 }
 
 .skills-bar {
@@ -489,11 +461,14 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .redes {
+        justify-content: center;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
-
     .contenido-edu .cert{
         width: 100%;
     }
@@ -508,33 +483,22 @@ body {
         width: 100%;
     }
 
+    .sobre-mi, .skills, .skills-main, 
+    .contacto, .proyectos {
+    border: 1px solid #fff;
+    }
+
     .skills-main {
         display: flex;
         flex-direction: column;
-    }
-
-    .skills .title {
-        margin: 0px 1.3em;
-        padding: 20px 0px;  
-    }
-
-    .title-pro {
-        margin: 0px 1.2em;
+        padding: 20px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .skills {
         width: 100%;
-        margin: 2em 0px;
-    }
-
-    .skills .title {
-        margin: 0px 1.5em;
-    }
-
-    .title-pro {
-        margin: 0px 0.8em;
+        margin: 1em auto;
     }
 
     .enroll{
@@ -543,6 +507,11 @@ body {
 }
 
 @media screen and (max-width: 508px) {
+    .sobre-mi, .skills, .skills-main, 
+    .contacto, .proyectos {
+    max-width: 90%;
+    }
+
     .contenido-edu .link{
         width: 100%;
         max-width: 500px;
@@ -559,11 +528,12 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  
     .card-pro {
         max-width: 100%;
     }
 
-    .title-pro {
-        margin: 0px 0.7em;
+    .contacto-text {
+        flex-direction: column;
     }
 }

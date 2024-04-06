@@ -25,16 +25,14 @@
 
     <div class="container">
         <header class="header">
-            <button class="btn-cambio">
-                <i class="fa-solid fa-sun" id="icono"></i>
-            </button>
+            <i class="fa-solid fa-sun" id="icono"></i>
         </header>
         <div class="card">
             <div class="imagen">
                 <img src="images/Logo-c.jpg" alt="Logo-c" class="logo">
             </div>
             <div class="contenido-pres">
-                <h1>Saúl Alcantar S.</h1>
+                <h1 class="name-title">Saúl Alcantar S.</h1>
                 <p class="dedica">Estudiante en Desarrollador Web Frontend</p>
                 <div class="redes">
                     <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
@@ -47,7 +45,7 @@
                         class="link-redes">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <button class="btn cv">Ver CV</button>
+                    <a href="/images/Cv-Saul-Alcantar.pdf" class="cv-link" target="_blank">Ver CV</a>
                 </div>
             </div>
         </div>
@@ -55,7 +53,7 @@
 
         <section class="sobre-mi">
             <div class="container-sobre">
-                <h2>Sobre mi</h2>
+                <h1 class="title">Sobre mi</h1>
                 <div class="text">
                     <p>Soy estudiante autodidacta enfocado en el desarrollo web Frontend, me especializo en crear
                         diseños
@@ -66,7 +64,7 @@
                         tengo compentencias como responsabilidad, empatico y trabajo en equipo.</p>
                 </div>
                 <div class="educacion">
-                    <h1 class="title-edu">Educación</h1>
+                    <h1 class="title">Educación</h1>
                     <div class="contenido-edu">
                         <a href="https://www.freecodecamp.org/espanol/certification/SaulGustavo/responsive-web-design"
                             target="_blank" class="cert luz">
@@ -76,6 +74,10 @@
                             target="_blank" class="cert luz">
                             Algoritmos y Estructura de Datos con JavaScript - Freecodecamp
                         </a>
+                        <a href="https://www.freecodecamp.org/certification/SaulGustavo/front-end-development-libraries"
+                            target="_blank" class="cert luz">
+                            Librerias Frontend - Freecodecamp
+                        </a>
                         <p class="cert luz">Ing. Sistemas Computacionales Sep. 2019 - Ago 2020</p>
                     </div>
                 </div>
@@ -83,7 +85,7 @@
         </section>
 
         <section class="proyectos">
-            <h1 class="title-pro">Proyectos</h1>
+            <h1 class="title">Proyectos</h1>
             <div class="cards-pro">
                 <div class="card-envolt">
                     <a href="#" target="_blank" class="card-link">
@@ -98,31 +100,21 @@
                                     eos
                                     eligendi!
                                 </p>
-                                <div class="iconos-tools">
-                                    <div class="icon-tool"></div>
-                                    <div class="icon-tool"></div>
-                                    <div class="icon-tool"></div>
-                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
 
                 <div class="card-envolt">
-                    <a href="#" target="_blank" class="card-link">
+                    <a href="https://www.frontendmentor.io/profile/Saul-Gustavo" target="_blank" class="card-link">
                         <div class="card-pro">
-                            <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
+                            <img src="images/FronendMentor-chall.png" alt="Portafolio-Saul" class="img-pro">
                             <div class="contenido-pro">
                                 <h2 class="title-card">Desafios FrontendMentor</h2>
                                 <p class="desp">
                                     Desafios de la plataforma FrontendMentor.io para practicar las habilidades del
                                     Desarrollo Web Frontend
                                 </p>
-                                <div class="iconos-tools">
-                                    <div class="icon-tool"></div>
-                                    <div class="icon-tool"></div>
-                                    <div class="icon-tool"></div>
-                                </div>
                             </div>
                         </div>
                     </a>
@@ -146,7 +138,7 @@
         </section>
 
         <section class="skills">
-            <h2 class="title">Habilidades</h2>
+            <h1 class="title title-hab">Habilidades</h1>
             <div class="skills-main">
                 <div class="skills-left">
 
@@ -218,7 +210,7 @@
         <footer class="contacto">
             <div class="contacto-text">
                 <p class="email">saulgustavo237@gmail.com</p>
-                <button class="btn-send accion">
+                <button class="btn-send accion" onclick="location.href='mailto:saulgustavo237@gmail.com'">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
