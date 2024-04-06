@@ -483,11 +483,6 @@ body {
         width: 100%;
     }
 
-    .sobre-mi, .skills, .skills-main, 
-    .contacto, .proyectos {
-    border: 1px solid #fff;
-    }
-
     .skills-main {
         display: flex;
         flex-direction: column;
