@@ -31,6 +31,7 @@
  header {
     width: 100%;
     backdrop-filter: blur(80px) saturate(100%);
+    -webkit-backdrop-filter: blur(80px) saturate(100%);
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -216,7 +217,6 @@
     padding: 20px 0px;
 }
 
-
 .contacto {
     width: 100%;
     text-align: center;
@@ -278,6 +278,7 @@
     nav {
         display: none;
         backdrop-filter: blur(80px) saturate(100%);
+    -webkit-backdrop-filter: blur(80px) saturate(100%);
         position: absolute;
         top: 60px;
         width: 100%;
