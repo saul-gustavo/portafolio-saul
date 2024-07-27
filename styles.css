@@ -274,6 +274,41 @@
 }
 
 
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 9em 2em;
+    }
+
+    .texto-hero {
+        text-align: center;
+    }
+
+    .image-hero .img-perfil {
+        max-width: 450px;
+    }
+
+    .about .main {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 2em;
+    }
+    
+    .texto-about {
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3em 0em;
+        gap: 3em;
+    }
+}
+
+
+
 @media screen and (max-width: 768px) {
 
     nav {
@@ -316,12 +351,7 @@
       }
 
       .image-hero .img-perfil {
-        max-width: 500px;
-    }
-
-    .about .main {
-        display: flex;
-        flex-direction: column;
+        max-width: 410px;
     }
 
     .about .texto-about {
@@ -333,15 +363,6 @@
     .texto-about .dedica {
         padding: 1em 1em;
     }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        padding: 2em 0em;
-        gap: 4em;
-        min-height: 100vh;
-    }
-
     .card {
         padding: 20px;
     }
