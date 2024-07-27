@@ -278,7 +278,8 @@
     nav {
         display: none;
         backdrop-filter: blur(80px) saturate(100%);
-    -webkit-backdrop-filter: blur(80px) saturate(100%);
+        -webkit-backdrop-filter: blur(80px) saturate(100%);
+        background: rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 60px;
         width: 100%;
