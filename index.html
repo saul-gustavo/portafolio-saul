@@ -21,208 +21,135 @@
     <title>Portafolio Saul G. Alcantar S.</title>
 </head>
 
-<body id="body">
-
-    <div class="container">
-        <header class="header">
-            <i class="fa-solid fa-sun" id="icono"></i>
-        </header>
-        <div class="card">
-            <div class="imagen">
-                <img src="images/Logo-c.jpg" alt="Logo-c" class="logo">
-            </div>
-            <div class="contenido-pres">
-                <h1 class="name-title">Saúl Alcantar S.</h1>
-                <p class="dedica">Estudiante en Desarrollador Web Frontend</p>
-                <div class="redes">
-                    <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="https://github.com/Saul-Gustavo" target="_blank" class="link-redes">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2" target="_blank"
-                        class="link-redes">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1mYPlXfESBrtjbAk3-QxkgGOoq_iWSB5N/view?usp=drive_link"
-                        class="cv-link" target="_blank">Ver CV</a>
-                </div>
-            </div>
+<body>
+    <header class="header">
+        <div class="imagen">
+            <img src="images/Logo-c.jpg" alt="logo-c" class="logo">
         </div>
-        <div class="line"></div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav id="nav-menu" class="nav">
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <button class="btn-contacto">Contacto</button>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="sobre-mi">
-            <div class="container-sobre">
-                <h1 class="title">Sobre mi</h1>
-                <div class="text">
-                    <p>Soy estudiante autodidacta enfocado en el desarrollo web Frontend, me especializo en crear
-                        diseños
-                        minimalistas y funcionales, para que el usuario tenga una buena experiencia, me gustaria obtener
-                        un trabajo en desarrollo web para adquirir experiencia y fortalecer mi vida profesional</p>
+    <section class="hero" id="home">
+        <div class="texto-hero">
+            <h1>¡Hola soy Saúl!</h1>
+            <p class="sub">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me especializo en crear
+                estrategias
+                digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales.</p>
+            <button class="btn-cv">Ver CV</button>
+        </div>
+        <div class="image-hero">
+            <img src="images/imagen-perfil.png" alt="imagen-perfil" class="img-perfil">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="sobre-mi">Sobre mi</h1>
+        <main class="main">
+            <div class="imagen-about">
+                <img src="images/perfil-svg-remove.png" alt="imagen-perfil" class="img-about">
+            </div>
+            <div class="texto-about">
+                <h2 class="name">Saul Gustavo Alcantar Sanchez</h2>
+                <p class="dedica">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me
+                    especializo en crear
+                    estrategias digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales. <br>
                     <br>
-                    <p>Me gusta colaborar con profesionales para aprender y tener buenas practicas de programacion,
-                        tengo compentencias como responsabilidad, empatico y trabajo en equipo.</p>
-                </div>
-                <div class="educacion">
-                    <h1 class="title">Educación</h1>
-                    <div class="contenido-edu">
-                        <a href="https://www.freecodecamp.org/espanol/certification/SaulGustavo/responsive-web-design"
-                            target="_blank" class="cert luz">
-                            Diseño Web Responsivo con HTML5 y CSS3 - Freecodecamp
-                        </a>
-                        <a href="https://www.freecodecamp.org/espanol/certification/SaulGustavo/javascript-algorithms-and-data-structures"
-                            target="_blank" class="cert luz">
-                            Algoritmos y Estructura de Datos con JavaScript - Freecodecamp
-                        </a>
-                        <a href="https://www.freecodecamp.org/certification/SaulGustavo/front-end-development-libraries"
-                            target="_blank" class="cert luz">
-                            Librerias Frontend - Freecodecamp
-                        </a>
-                        <p class="cert luz">Ing. Sistemas Computacionales Sep. 2019 - Ago 2020</p>
-                    </div>
+
+                    En marketing digital, domino SEO, SEM, marketing en redes sociales y análisis de datos para diseñar
+                    campañas
+                    integrales. Como desarrollador web frontend, tengo experiencia en HTML, CSS y JavaScript, y me
+                    esfuerzo
+                    por
+                    crear experiencias de usuario intuitivas. <br> <br>
+
+                    Busco aplicar mis conocimientos en proyectos reales, aprender de la industria y colaborar con
+                    profesionales.
+                    Estoy comprometido a seguir creciendo en estos campos y alcanzar objetivos comerciales a través de
+                    soluciones web efectivas.
+                </p>
+            </div>
+        </main>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <h1 class="ti-pro">Proyectos</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                <div class="contenido">
+                    <h2 class="title-card">Name proyecto</h2>
+                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
                 </div>
             </div>
-        </section>
 
-        <section class="proyectos">
-            <h1 class="title">Proyectos</h1>
-            <div class="cards-pro">
-
-                <div class="card-envolt">
-                    <a href="https://www.frontendmentor.io/profile/Saul-Gustavo" target="_blank" class="card-link">
-                        <div class="card-pro">
-                            <img src="images/FronendMentor-chall.png" alt="FronendMentor-chall" class="img-pro">
-                            <div class="contenido-pro">
-                                <h2 class="title-card">Desafios FrontendMentor</h2>
-                                <p class="desp">
-                                    Desafios de la plataforma FrontendMentor.io para practicar las habilidades del
-                                    Desarrollo Web Frontend
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-envolt">
-                    <a href="#" target="_blank" class="card-link">
-                        <div class="card-pro">
-                            <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-pro">
-                            <div class="contenido-pro">
-                                <h2 class="title-card">Landing Page</h2>
-                                <p class="desp">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cumque quo
-                                    adipisci,
-                                    nisi
-                                    eos
-                                    eligendi!
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="enroll">
-                    <a href="#" target="_blank" class="card-simple">
-                        <div class="card-simp">
-                            <h2>Landing Page</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sapiente inventore
-                                temporeiusto.</p>
-                            <div class="iconos-tools-dos">
-                                <div class="icon-tool"></div>
-                                <div class="icon-tool"></div>
-                                <div class="icon-tool"></div>
-                            </div>
-                        </div>
-                    </a>
+            <div class="card">
+                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                <div class="contenido">
+                    <h2 class="title-card">Name proyecto</h2>
+                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
                 </div>
             </div>
-        </section>
 
-        <section class="skills">
-            <h1 class="title title-hab">Habilidades</h1>
-            <div class="skills-main">
-                <div class="skills-left">
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>HTML5</p>
-                            <p>55%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="html"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>CSS3</p>
-                            <p>50%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="css"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>JavaScript</p>
-                            <p>45%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="js"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-right">
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>GitHub</p>
-                            <p>25%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="git"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>React</p>
-                            <p>35%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="react"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills-bar">
-                        <div class="info">
-                            <p>Python</p>
-                            <p>32%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="python"></span>
-                        </div>
-                    </div>
+            <div class="card">
+                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                <div class="contenido">
+                    <h2 class="title-card">Name proyecto</h2>
+                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
                 </div>
             </div>
-        </section>
 
-        <footer class="contacto">
-            <div class="contacto-text">
-                <p class="email">saulgustavo237@gmail.com</p>
-                <button class="btn-send accion" onclick="location.href='mailto:saulgustavo237@gmail.com'">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
+            <div class="card">
+                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                <div class="contenido">
+                    <h2 class="title-card">Name proyecto</h2>
+                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
+                </div>
             </div>
-        </footer>
-
-        <div class="copy">
-            &copy; Creado por Saul Gustavo Alcantar Sanchez <br> <!-- Beta 1.2:17.3.2024 -->
         </div>
-    </div>
-    <script src="app.js"></script>
+    </section>
+
+    <footer class="contacto" id="contacto">
+        <h3>¿Tienes un proyecto en mente? ¡Contactame!</h3>
+        <div class="contacto-text">
+            <p class="email">saulgustavo237@gmail.com</p>
+            <button class="btn-send accion" onclick="location.href='mailto:saulgustavo237@gmail.com'">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="redes">
+            <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com/Saul-Gustavo" target="_blank" class="link-redes">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2" target="_blank" class="link-redes">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- <a href="https://drive.google.com/file/d/1mYPlXfESBrtjbAk3-QxkgGOoq_iWSB5N/view?usp=drive_link"
+                class="cv-link" target="_blank">Ver CV</a> -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
 
 </body>
 

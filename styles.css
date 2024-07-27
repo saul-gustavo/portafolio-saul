@@ -14,6 +14,344 @@
     --dark-color: #000000;
 }
 
+
+* {  
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+ body {
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+}
+                                                                                                
+ header {
+    width: 100%;
+    backdrop-filter: blur(80px) saturate(100%);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;
+    padding: 0px 2em;
+  } 
+  
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: orange;
+  }
+  
+  nav.active {
+    display: block;
+  }
+
+.hero, .about, .main, .proyectos {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.texto-hero h1 {
+    font-size: 3em;
+}
+
+.texto-hero p {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.btn-cv, .btn-contacto {
+    padding: 8px 2em;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: orange;
+    background-color: slateblue; 
+    color: #fff;
+}
+
+.btn-cv:hover, .btn-contacto:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-cv {
+    padding: 8px 4em;
+    margin-top: 30px;
+}
+
+.image-hero {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-hero .img-perfil {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.about .main{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sobre-mi {
+    text-align: center;
+    font-size: 30px;
+}
+
+.name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dedica {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.imagen-about {
+    width: 100%;
+}
+
+.img-about {
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+    margin:30px auto;
+    display: block;
+}
+
+.proyectos {
+    width: 100%;
+}
+
+.proyectos h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.1em;
+}
+
+.cards {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.card .img-card {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.card .contenido {
+    text-align: center;
+}
+
+.title-card {
+    padding: 20px 0px;
+}
+
+
+.contacto {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contacto .contacto-text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contacto-text .email {
+    font-size: 18px;
+}
+
+.btn-send {
+    padding: 5px 20px;
+    margin-left: 20px;
+    border: 1px solid transparent;
+    background-color: orange;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.redes a {
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.redes a i {
+    font-size: 30px;
+    color: #fff;
+    transition: color  0.3s ease;
+}
+
+.redes a i:hover {
+    color: orangered;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: none;
+        backdrop-filter: blur(80px) saturate(100%);
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        height: 350px;
+        inset-inline: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      .menu-icon {
+        cursor: pointer;
+        font-size: 24px;
+        display: block;
+      }
+
+      .btn-contacto {
+        margin-top: 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 5em 1em;
+      }
+
+      .texto-hero {
+        text-align: center;
+      }
+
+      .image-hero {
+        width: 100%;
+      }
+
+      .image-hero .img-perfil {
+        max-width: 500px;
+    }
+
+    .about .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .texto-about {
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 2em;
+    }
+
+    .texto-about .dedica {
+        padding: 1em 1em;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 0em;
+        gap: 4em;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .img-about {
+        max-width: 450px;
+    }
+
+} 
+
+
+
+
+/*  
 * {
     padding: 0;
     margin: 0;
@@ -36,7 +374,7 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* btn styles */
+/* btn styles 
 
 .cv-link {
     text-decoration: none;
@@ -60,7 +398,7 @@ body {
     margin: 20px 10px;
 }
 
-/* dark mode  */
+/* dark mode  
 
 .oscuro {
     background-color: #FFFFFC;
@@ -147,7 +485,7 @@ body {
     background: #0000ff;
 }
 
-/* estilos generales */
+/* estilos generales 
 
 .sobre-mi, .skills, .skills-main, 
 .contacto, .proyectos {
@@ -163,7 +501,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* sobre mi */
+/* sobre mi 
 
 .sobre-mi {
     display: block; 
@@ -183,7 +521,7 @@ body {
     font-weight: 500;
 }
 
-/* educacion */
+/* educacion 
 
 .educacion .contenido-edu{
     display: flex;
@@ -206,7 +544,7 @@ body {
     opacity: 0.7;
 }
 
-/* proyectos cards */
+/* proyectos cards 
 
 .proyectos {
     margin:auto;
@@ -228,7 +566,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* end cards */
+/* end cards 
 
 .card-pro .img-pro {
     width: 100%;
@@ -253,7 +591,7 @@ body {
     gap: 20px;
 }
 
-/* nuevas cards */
+/* nuevas cards 
 
 .card-simple {
     text-decoration: none;
@@ -284,7 +622,7 @@ body {
     opacity: 0.8;
 }
 
-/* fin modo oscuro */
+/* fin modo oscuro 
 
 .iconos-tools-dos {
     display: flex;
@@ -304,7 +642,7 @@ body {
     margin: auto;
 }
 
-/* skills */
+/* skills 
 
 .skills {
     margin: 0px auto;
@@ -380,7 +718,7 @@ body {
     animation: python 3.3s;
 }
 
-/* animacion skills */
+/* animacion skills 
 
 @keyframes html {
    0% {width: 0;}
@@ -412,7 +750,7 @@ body {
     100% {width: 32%;}
 }
 
-/* seccion contacto */
+/* seccion contacto 
 
 .contacto {
     padding: 1em;
@@ -450,7 +788,7 @@ body {
     padding: 20px;
 }
 
-/* responsivo */
+/* responsivo 
 
 @media screen and (max-width: 1000px) {
     body {
@@ -532,3 +870,4 @@ body {
         flex-direction: column;
     }
 }
+*/
