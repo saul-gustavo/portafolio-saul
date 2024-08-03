@@ -18,139 +18,168 @@
     <link rel="stylesheet" href="styles.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/Logo-c.jpg" type="image/x-icon">
-    <title>Portafolio Saul G. Alcantar S.</title>
+    <title>Saul G. Portafolio</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="imagen">
-            <img src="images/Logo-c.jpg" alt="logo-c" class="logo">
-        </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-            ☰
-        </div>
-        <nav id="nav-menu" class="nav">
-            <ul class="menu">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <button class="btn-contacto">Contacto</button>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="hero" id="home">
-        <div class="texto-hero">
-            <h1>¡Hola soy Saúl!</h1>
-            <p class="sub">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me especializo en crear
-                estrategias
-                digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales.</p>
-            <button class="btn-cv">Ver CV</button>
-        </div>
-        <div class="image-hero">
-            <img src="images/imagen-perfil.png" alt="imagen-perfil" class="img-perfil">
-        </div>
-    </section>
+    <div class="container-main">
+        <header class="header">
+            <a href="#home" class="logo-link">
+                <img src="images/Logo-c.jpg" alt="logo" class="logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="item">
+                        <a href="#home" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="item">
+                        <a href="#about" class="nav-link">Sobre mi</a>
+                    </li>
+                    <li class="item">
+                        <a href="#proyectos" class="nav-link">Proyectos</a>
+                    </li>
+                    <li><a href="#contacto" class="btn-contacto link-contacto">Contacto</a></li>
 
-    <section class="about" id="about">
-        <h1 class="sobre-mi">Sobre mi</h1>
-        <main class="main">
-            <div class="imagen-about">
-                <img src="images/perfil-svg-remove.png" alt="imagen-perfil" class="img-about">
-            </div>
-            <div class="texto-about">
-                <h2 class="name">Saul Gustavo Alcantar Sanchez</h2>
-                <p class="dedica">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me
-                    especializo en crear
-                    estrategias digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales. <br>
-                    <br>
-
-                    En marketing digital, domino SEO, SEM, marketing en redes sociales y análisis de datos para diseñar
-                    campañas
-                    integrales. Como desarrollador web frontend, tengo experiencia en HTML, CSS y JavaScript, y me
-                    esfuerzo
-                    por
-                    crear experiencias de usuario intuitivas. <br> <br>
-
-                    Busco aplicar mis conocimientos en proyectos reales, aprender de la industria y colaborar con
-                    profesionales.
-                    Estoy comprometido a seguir creciendo en estos campos y alcanzar objetivos comerciales a través de
-                    soluciones web efectivas.
-                </p>
-            </div>
-        </main>
-    </section>
-
-    <section class="proyectos" id="proyectos">
-        <h1 class="ti-pro">Proyectos</h1>
-        <div class="cards">
-            <div class="card">
-                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
-                <div class="contenido">
-                    <h2 class="title-card">Name proyecto</h2>
-                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
-                <div class="contenido">
-                    <h2 class="title-card">Name proyecto</h2>
-                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
-                <div class="contenido">
-                    <h2 class="title-card">Name proyecto</h2>
-                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
-                <div class="contenido">
-                    <h2 class="title-card">Name proyecto</h2>
-                    <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="contacto" id="contacto">
-        <h3>¿Tienes un proyecto en mente? ¡Contactame!</h3>
-        <div class="contacto-text">
-            <p class="email">saulgustavo237@gmail.com</p>
-            <button class="btn-send accion" onclick="location.href='mailto:saulgustavo237@gmail.com'">
-                <i class="fa-solid fa-arrow-right"></i>
+                </ul>
+            </nav>
+            <button class="nav-toggle">
+                <span class="line one"></span>
+                <span class="line two"></span>
+                <span class="line three"></span>
             </button>
-        </div>
+        </header>
 
-        <div class="redes">
-            <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://github.com/Saul-Gustavo" target="_blank" class="link-redes">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2" target="_blank" class="link-redes">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <!-- <a href="https://drive.google.com/file/d/1mYPlXfESBrtjbAk3-QxkgGOoq_iWSB5N/view?usp=drive_link"
-                class="cv-link" target="_blank">Ver CV</a> -->
-        </div>
-    </footer>
 
+        <section class="hero" id="home">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="hero-texto">
+                <h1 class="hero-name">¡Hola, soy <span>Saúl</span>!</h1>
+                <p class="hero-sub">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me especializo en
+                    crear
+                    estrategias
+                    digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales.</p>
+                <a href="https://drive.google.com/file/d/1mYPlXfESBrtjbAk3-QxkgGOoq_iWSB5N/view?usp=drive_link"
+                    class="btn-cv" target="_blank">Ver CV</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="/images/imagen-perfil.png" alt="imagen perfil" class="hero-img">
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <h2 class="title-section">Sobre mí</h2>
+            <div class="container-about">
+                <div class="about-imagen">
+                    <img src="/images/perfil-svg.svg" alt="perfil svg" class="about-img">
+                </div>
+
+                <div class="about-texto">
+                    <h2 class="about-name">Saul Gustavo Alcantar Sanchez</h2>
+                    <p class="about-dedica">Soy un estudiante de Marketing Digital y Desarrollo Web Frontend. Me
+                        especializo en crear
+                        estrategias digitales efectivas y desarrollar interfaces de usuario atractivas y funcionales.
+                        <br>
+                        <br>
+
+                        En marketing digital, domino SEO, SEM, marketing en redes sociales y análisis de datos para
+                        diseñar
+                        campañas
+                        integrales. Como desarrollador web frontend, tengo experiencia en HTML, CSS y JavaScript, y me
+                        esfuerzo
+                        por
+                        crear experiencias de usuario intuitivas. <br> <br>
+
+                        Busco aplicar mis conocimientos en proyectos reales, aprender de la industria y colaborar con
+                        profesionales.
+                        Estoy comprometido a seguir creciendo en estos campos y alcanzar objetivos comerciales a través
+                        de
+                        soluciones web efectivas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <h1 class="title-section">Proyectos</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                    <div class="contenido">
+                        <h2 class="title-card">Name proyecto</h2>
+                        <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                    <div class="contenido">
+                        <h2 class="title-card">Name proyecto</h2>
+                        <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Portafolio-Saul.png" alt="Portafolio-Saul" class="img-card">
+                    <div class="contenido">
+                        <h2 class="title-card">Name proyecto</h2>
+                        <p class="sub-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="contacto" id="contacto">
+            <h3>¿Tienes un proyecto en mente? ¡Contactame!</h3>
+            <div class="contacto-text">
+                <p class="email">saulgustavo237@gmail.com</p>
+                <button class="btn-send accion" onclick="location.href='mailto:saulgustavo237@gmail.com'">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="redes">
+                <a href="https://twitter.com/Gust4av3txc01" target="_blank" class="link-redes">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/Saul-Gustavo" target="_blank" class="link-redes">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/saul-gustavo-alcantar-s-015bb12a2" target="_blank"
+                    class="link-redes">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
     <script>
-        function toggleMenu() {
-            var menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
-        }
+        const navToggle = document.querySelector(".nav-toggle");
+        const navBar = document.querySelector(".nav-menu");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navToggle.addEventListener('click', () => {
+            navBar.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                navBar.classList.remove('active');
+                navToggle.classList.remove('active');
+
+                // Navega a la sección objetivo
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                // Desplazamiento suave a la sección
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
     </script>
-
-
 </body>
 
 </html>
