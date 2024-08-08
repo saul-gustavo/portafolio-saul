@@ -230,7 +230,7 @@ body {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
+    gap: 16px;
 }
 
 .card .contenido {
@@ -245,7 +245,7 @@ body {
 }
 
 .card .img-card {
-    width: 100;
+    width: 100%;
     display: block;
     object-fit: cover;
     margin: auto;
