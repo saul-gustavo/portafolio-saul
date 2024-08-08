@@ -21,10 +21,6 @@
     scroll-behavior: smooth;
 }
 
-html {
-    font-size: 18px;
-}
-
 body {
     width: 100%;
     background-color: black;
@@ -65,7 +61,7 @@ body {
 
 .nav-menu .item .nav-link {
     color: #fff;
-    font-size: 18px;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
