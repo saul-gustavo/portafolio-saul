@@ -230,7 +230,6 @@ body {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    border: 1px solid red;
     gap: 10px;
 }
 
@@ -258,7 +257,6 @@ body {
 .contacto {
     text-align: center;
     padding: 20px 0px;
-    border: 1px solid white;
 }
 
 .contacto h3 {
